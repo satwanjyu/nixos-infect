@@ -325,7 +325,7 @@ infect() {
   # TODO use addgroup and adduser as fallbacks
   #addgroup nixbld -g 30000 || true
   #for i in {1..10}; do adduser -DH -G nixbld nixbld$i || true; done
-  NIX_INSTALL_URL="${NIX_INSTALL_URL:-https://mirrors.tuna.tsinghua.edu.cn/nix/install}"
+  NIX_INSTALL_URL="${NIX_INSTALL_URL:-https://mirrors.tuna.tsinghua.edu.cn/nix/latest/install}"
   curl -L "${NIX_INSTALL_URL}" | sh -s -- --no-channel-add
 
   # shellcheck disable=SC1090
