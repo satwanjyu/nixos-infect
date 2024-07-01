@@ -333,7 +333,7 @@ infect() {
 
   [[ -z "$NIX_CHANNEL" ]] && NIX_CHANNEL="nixos-23.05"
   nix-channel --remove nixpkgs
-  nix-channel --add "https://mirrors.sjtu.edu.cn/nix-channels/$NIX_CHANNEL" nixos
+  nix-channel --add "https://mirrors.sjtug.sjtu.edu.cn/nix-channels/$NIX_CHANNEL" nixos
   nix-channel --update
 
   if [[ $NIXOS_CONFIG = http* ]]
